@@ -1,0 +1,11 @@
+port: 6060
+certs:
+  - type: file
+    file: /tmp/cert-test.pem
+    name: test cert
+    interval: 10m
+
+  - type: address
+    address: google.com:443 #host:port
+    name: google cert
+    interval: 10m
